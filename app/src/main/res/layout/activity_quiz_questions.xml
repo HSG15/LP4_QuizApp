@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuizQuestionsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="What country does this flag belong to ?"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="22dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/flagImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="Quiz Image"
+            tools:src="@drawable/ic_flag_of_india" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:max="9"
+                android:minHeight="50dp"
+                android:progress="5" />
+            <TextView
+                android:id="@+id/tvProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="0/9"
+                android:textSize="15sp"
+                android:padding="15dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            tools:text="New Zealand"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/option_bg"
+            android:textSize="20sp"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/tv_option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/option_bg"
+            tools:text="New Zealand"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/tv_option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            tools:text="New Zealand"
+            android:gravity="center"
+            android:background="@drawable/option_bg"
+
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/tv_option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/option_bg"
+            tools:text="New Zealand"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            android:background="@color/purple_200"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
